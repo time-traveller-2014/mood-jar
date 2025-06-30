@@ -16,22 +16,18 @@ const quotes = {
     "Letting go doesn’t mean forgetting. It means choosing peace."
   ]
 };
-
 let currentMood = '';
-
 function showMood(mood) {
   currentMood = mood;
   document.getElementById('mood-selection').style.display = 'none';
   document.getElementById('quote-display').style.display = 'block';
   pickAnother();
 }
-
 function pickAnother() {
   const quoteList = quotes[currentMood];
   const random = Math.floor(Math.random() * quoteList.length);
   document.getElementById('quote-text').textContent = quoteList[random];
 }
-
 function goBack() {
   document.getElementById('quote-display').style.display = 'none';
   document.getElementById('mood-selection').style.display = 'block';
