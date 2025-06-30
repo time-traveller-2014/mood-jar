@@ -13,3 +13,18 @@
     }
   ]
 }
+{
+  "name": "Mood Jar",
+  "short_name": "MoodJar",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e6d1f2",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
